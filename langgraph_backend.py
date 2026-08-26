@@ -4,7 +4,9 @@ from typing import Literal,Annotated,TypedDict
 from langchain_core.messages import BaseMessage,HumanMessage
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph.message import add_messages
+from dotenv import load_dotenv
 
+load_dotenv()
 
 
 class ChatState(TypedDict):
@@ -14,8 +16,8 @@ class ChatState(TypedDict):
     
     
 import os
+print(os.environ["HUGGINGFACEHUB_API_TOKEN"])
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "HUGGINGFACEHUB_API_TOKEN"
 from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 
 llm = HuggingFaceEndpoint(
