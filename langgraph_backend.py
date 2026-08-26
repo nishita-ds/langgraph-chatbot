@@ -48,23 +48,4 @@ graph.add_edge("chatnode",END)
 checkpointer = InMemorySaver()
 chatbot=graph.compile(checkpointer=checkpointer)
 
-# for message_chunk , metadata in  chatbot.stream(
-#     {'messages':[HumanMessage(content='What is the recipe to make pasta?')]},config={'configurable':{'thread_id':'thread-1'}},stream_mode='messages'
-# ):
-#     if message_chunk.content:
-#         print(message_chunk.content,end=" ",flush=True)
 
-# print(type(stream))
-
-# Initial state
-
-# initial_state = {
-
-#     "messages": [
-
-#         HumanMessage(content="What is the capital of India?")
-
-#     ]
-
-# }
-# chatbot.invoke(initial_state)
