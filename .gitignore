@@ -18,3 +18,8 @@ __pycache__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SQLite
+*.db
+*.db-wal
+*.db-shm
