@@ -5,3 +5,4 @@ langchain-core
 langchain-huggingface
 python-dotenv
 huggingface_hub
+langgraph-checkpoint-sqlite
