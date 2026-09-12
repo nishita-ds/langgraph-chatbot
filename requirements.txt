@@ -6,3 +6,9 @@ langchain-huggingface
 python-dotenv
 huggingface_hub
 langgraph-checkpoint-sqlite
+langchain
+langchain-text-splitters
+langchain-community
+pypdf
+duckduckgo-search
+faiss-cpu

@@ -23,12 +23,10 @@ from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 llm = HuggingFaceEndpoint(
     repo_id="openai/gpt-oss-20b",
     task="text-generation",
-    provider="auto",
-    max_new_tokens=1500,
-    temperature=0.2,
-    repetition_penalty=1.1,
-    top_p=0.9
+    huggingfacehub_api_token=os.getenv("HF_TOKEN")
 )
+
+
 
 model = ChatHuggingFace(llm=llm)
 
